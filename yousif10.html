@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إرسال الواجب - مستر الحاسب الآلي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f5;
+            margin: 0;
+            padding: 30px;
+        }
+        .form-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>نموذج تسليم الواجبات والأسئلة</h2>
+        <form>
+            <label for="student-name">اسم الطالب:</label>
+            <input type="text" id="student-name" placeholder="اكتب اسمك الثلاثي" required>
+
+            <label for="grade">الصف الدراسي:</label>
+            <select id="grade">
+                <option>الصف الأول الإعدادي</option>
+                <option>الصف الثاني الإعدادي</option>
+                <option>الصف الثالث الإعدادي</option>
+                <option>الصف الأول الثانوي</option>
+            </select>
+
+            <label for="homework">إجابة الواجب أو السؤال:</label>
+            <textarea id="homework" rows="5" placeholder="اكتب إجابتك أو سؤالك هنا..." required></textarea>
+
+            <button type="submit">إرسال إلى المعلم</button>
+        </form>
+    </div>
+
+</body>
+</html>
